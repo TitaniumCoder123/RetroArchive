@@ -10,10 +10,10 @@ curl -L "https://github.com/TitaniumCoder123/RetroArchive/archive/refs/heads/mai
 unzip -o "/tmp/RetroArchive.zip" -d "/tmp/"
 
 # Copy all files to the destination
-cp -r "/tmp/retroarchive-main/"* "/userdata/roms/ports/RetroArchive/"
+cp -r "/tmp/RetroArchive-main/"* "/userdata/roms/ports/RetroArchive/"
 
 # Make the main script executable
-chmod +x "/userdata/roms/ports/RetroArchive/RetroArchive"
+chmod +x "/userdata/roms/ports/RetroArchive/retroarchive"
 
 # Create a launcher script for Batocera
 echo '#!/bin/bash
@@ -24,6 +24,6 @@ chmod +x "/userdata/roms/ports/RetroArchive.sh"
 
 # Clean up
 rm -f "/tmp/RetroArchive.zip"
-rm -rf "/tmp/your-repo-main"
+rm -rf "/tmp/RetroArchive-main"
 
 echo "Installation complete! Find 'RetroArchive' in your Batocera ports section."
