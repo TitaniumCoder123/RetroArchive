@@ -1,0 +1,15 @@
+{
+  "theme_name": "dark",
+  "controller_map": {
+    "confirm": 0,
+    "back": 1,
+    "menu": 8,
+    "start": 9
+  },
+  "vpn_username": "",
+  "vpn_password": "",
+  "vpn_selected_server": "",
+  "vpn_openvpn_command": "",
+  "download_mode": "torrent",
+  "category_display_mode": "grid"
+}

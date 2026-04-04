@@ -1,0 +1,547 @@
+[
+    {
+        "platform_name": "- BIOS by TMCTV -",
+        "folder": "bios",
+        "platform_image": "BIOS.png"
+    },
+    {
+        "platform_name": "3DO Interactive Multiplayer",
+        "folder": "3do",
+        "platform_image": "3DO Interactive Multiplayer.png"
+    },
+    {
+        "platform_name": "3DS",
+        "folder": "3ds",
+        "platform_image": "Nintendo 3DS.png"
+    },
+    {
+        "platform_name": "Adventure Vision",
+        "folder": "advision",
+        "platform_image": "Entex Adventure Vision.png"
+    },
+    {
+        "platform_name": "Amiga CD32",
+        "folder": "amigacd32",
+        "platform_image": "Commodore Amiga CD32.png"
+    },
+    {
+        "platform_name": "Amiga CDTV",
+        "folder": "amigacdtv",
+        "platform_image": "Commodore Amiga CDTV.png"
+    },
+    {
+        "platform_name": "Amiga OCS ECS",
+        "folder": "amiga500",
+        "platform_image": "Commodore Amiga.png"
+    },
+    {
+        "platform_name": "Apple II",
+        "folder": "apple2",
+        "platform_image": "Apple II.png"
+    },
+    {
+        "platform_name": "Apple IIGS",
+        "folder": "apple2gs",
+        "platform_image": "Apple IIGS.png"
+    },
+    {
+        "platform_name": "Arcadia 2001",
+        "folder": "arcadia",
+        "platform_image": "Emerson Arcadia 2001.png"
+    },
+    {
+        "platform_name": "Archimedes",
+        "folder": "archimedes",
+        "platform_image": "Acorn Archimedes.png"
+    },
+    {
+        "platform_name": "Astrocade",
+        "folder": "astrocde",
+        "platform_image": "Bally Astrocade.png"
+    },
+    {
+        "platform_name": "Atari 2600",
+        "folder": "atari2600",
+        "platform_image": "Atari 2600.png"
+    },
+    {
+        "platform_name": "Atari 5200",
+        "folder": "atari5200",
+        "platform_image": "Atari 5200.png"
+    },
+    {
+        "platform_name": "Atari 7800",
+        "folder": "atari7800",
+        "platform_image": "Atari 7800.png"
+    },
+    {
+        "platform_name": "Atari Lynx",
+        "folder": "lynx",
+        "platform_image": "Atari Lynx.png"
+    },
+    {
+        "platform_name": "Atari ST",
+        "folder": "atarist",
+        "platform_image": "Atari ST.png"
+    },
+    {
+        "platform_name": "Atom",
+        "folder": "atom",
+        "platform_image": "Atom.png"
+    },
+    {
+        "platform_name": "Channel-F",
+        "folder": "channelf",
+        "platform_image": "Fairchild Channel F.png"
+    },
+    {
+        "platform_name": "ColecoVision",
+        "folder": "colecovision",
+        "platform_image": "ColecoVision.png"
+    },
+    {
+        "platform_name": "Commodore 64",
+        "folder": "c64",
+        "platform_image": "Commodore 64.png"
+    },
+    {
+        "platform_name": "Commodore Plus4",
+        "folder": "cplus4",
+        "platform_image": "Commodore Plus 4.png"
+    },
+    {
+        "platform_name": "Commodore VIC-20",
+        "folder": "c20",
+        "platform_image": "Commodore VIC-20.png"
+    },
+    {
+        "platform_name": "CreatiVision",
+        "folder": "crvision",
+        "platform_image": "VTech CreatiVision.png"
+    },
+    {
+        "platform_name": "Daphne",
+        "folder": "daphne",
+        "platform_image": "Daphne.png"
+    },
+    {
+        "platform_name": "Dos (x86)",
+        "folder": "dos",
+        "platform_image": "msdos.png"
+    },
+    {
+        "platform_name": "Dreamcast",
+        "folder": "dreamcast",
+        "platform_image": "Dreamcast.png"
+    },
+    {
+        "platform_name": "Family Computer Disk System",
+        "folder": "fds",
+        "platform_image": "Family_Computer_Disk_System.png"
+    },
+    {
+        "platform_name": "Final Burn Neo",
+        "folder": "fbneo",
+        "platform_image": "Final Burn Neo.png"
+    },
+    {
+        "platform_name": "FM-TOWNS",
+        "folder": "fmtowns",
+        "platform_image": "Fujitsu FM Towns.png"
+    },
+    {
+        "platform_name": "Gamate",
+        "folder": "gamate",
+        "platform_image": "Gamate.png"
+    },
+    {
+        "platform_name": "Game and Watch",
+        "folder": "gameandwatch",
+        "platform_image": "Game_and_Watch.png"
+    },
+    {
+        "platform_name": "Game Boy",
+        "folder": "gb",
+        "platform_image": "Nintendo Game Boy.png"
+    },
+    {
+        "platform_name": "Game Boy Advance",
+        "folder": "gba",
+        "platform_image": "Game Boy Advance.png"
+    },
+    {
+        "platform_name": "Game Boy Color",
+        "folder": "gbc",
+        "platform_image": "Nintendo Game Boy Color.png"
+    },
+    {
+        "platform_name": "Game Cube",
+        "folder": "gamecube",
+        "platform_image": "Game_Cube.png"
+    },
+    {
+        "platform_name": "Game Gear",
+        "folder": "gamegear",
+        "platform_image": "Sega Game Gear.png"
+    },
+    {
+        "platform_name": "Game Master",
+        "folder": "gmaster",
+        "platform_image": "Hartung Game Master.png"
+    },
+    {
+        "platform_name": "Game.com",
+        "folder": "gamecom",
+        "platform_image": "Tiger Game.com.png"
+    },
+    {
+        "platform_name": "Jaguar",
+        "folder": "jaguar",
+        "platform_image": "Atari Jaguar.png"
+    },
+    {
+        "platform_name": "Macintosh",
+        "folder": "macintosh",
+        "platform_image": "Apple Mac OS.png"
+    },
+    {
+        "platform_name": "Master System",
+        "folder": "mastersystem",
+        "platform_image": "Sega Mark III.png"
+    },
+    {
+        "platform_name": "Mattel Intellivision",
+        "folder": "intellivision",
+        "platform_image": "Mattel Intellivision.png"
+    },
+    {
+        "platform_name": "Mega CD",
+        "folder": "megacd",
+        "platform_image": "Sega CD 32X.png"
+    },
+    {
+        "platform_name": "Mega Drive",
+        "folder": "megadrive",
+        "platform_image": "Sega Mega Drive.png"
+    },
+    {
+        "platform_name": "Mega Duck Cougar Boy",
+        "folder": "megaduck",
+        "platform_image": "Mega Duck.png"
+    },
+    {
+        "platform_name": "MSX1",
+        "folder": "msx1",
+        "platform_image": "MSX 1.png"
+    },
+    {
+        "platform_name": "MSX2+",
+        "folder": "msx2",
+        "platform_image": "MSX2+.png"
+    },
+    {
+        "platform_name": "Namco System 246 256",
+        "folder": "namco2x6",
+        "platform_image": "Namco 246.256.png"
+    },
+    {
+        "platform_name": "Naomi",
+        "folder": "naomi",
+        "platform_image": "Sega Naomi.png"
+    },
+    {
+        "platform_name": "Naomi 2",
+        "folder": "naomi2",
+        "platform_image": "Sega Naomi 2.png"
+    },
+    {
+        "platform_name": "Neo-Geo",
+        "folder": "neogeo",
+        "platform_image": "Neo-Geo.png"
+    },
+    {
+        "platform_name": "Neo-Geo CD",
+        "folder": "neogeocd",
+        "platform_image": "SNK Neo Geo CD.png"
+    },
+    {
+        "platform_name": "Neo-Geo Pocket",
+        "folder": "ngp",
+        "platform_image": "SNK Neo Geo Pocket.png"
+    },
+    {
+        "platform_name": "Neo-Geo Pocket Color",
+        "folder": "ngpc",
+        "platform_image": "SNK Neo Geo Pocket Color.png"
+    },
+    {
+        "platform_name": "Nintendo 64",
+        "folder": "n64",
+        "platform_image": "Nintendo 64.png"
+    },
+    {
+        "platform_name": "Nintendo 64 Disk Drive",
+        "folder": "n64dd",
+        "platform_image": "Nintendo 64DD.png"
+    },
+    {
+        "platform_name": "Nintendo DS",
+        "folder": "nds",
+        "platform_image": "Nintendo DS.png"
+    },
+    {
+        "platform_name": "Nintendo DSi",
+        "folder": "nds",
+        "platform_image": "Nintendo DSi.png"
+    },
+    {
+        "platform_name": "Nintendo Entertainment System",
+        "folder": "nes",
+        "platform_image": "Nintendo Entertainment System.png"
+    },
+    {
+        "platform_name": "Odyssey2",
+        "folder": "o2em",
+        "platform_image": "Magnavox Odyssey 2.png"
+    },
+    {
+        "platform_name": "OpenBOR",
+        "folder": "openbor",
+        "platform_image": "1000078082.png"
+    },
+    {
+        "platform_name": "PC Engine",
+        "folder": "pcengine",
+        "platform_image": "NEC PC Engine.png"
+    },
+    {
+        "platform_name": "PC Engine CD",
+        "folder": "pcenginecd",
+        "platform_image": "PC_Engine_CD.png"
+    },
+    {
+        "platform_name": "PC Engine SuperGrafx",
+        "folder": "supergrafx",
+        "platform_image": "NEC PC Engine SuperGrafx.png"
+    },
+    {
+        "platform_name": "PC-9800",
+        "folder": "pc98",
+        "platform_image": "NEC PC-9801.png"
+    },
+    {
+        "platform_name": "PlayStation",
+        "folder": "psx",
+        "platform_image": "Sony Playstation.png"
+    },
+    {
+        "platform_name": "PlayStation 2",
+        "folder": "ps2",
+        "platform_image": "Sony Playstation 2.png"
+    },
+    {
+        "platform_name": "PlayStation 3 (Myrient)",
+        "folder": "ps3",
+        "platform_image": "PS3.png"
+    },
+    {
+        "platform_name": "PlayStation Portable",
+        "folder": "psp",
+        "platform_image": "Sony PSP.png"
+    },
+    {
+        "platform_name": "PlayStation Vita",
+        "folder": "psvita",
+        "platform_image": "Sony PS Vita.png"
+    },
+    {
+        "platform_name": "Pokemon Mini",
+        "folder": "pokemini",
+        "platform_image": "Nintendo Pokemon Mini.png"
+    },
+    {
+        "platform_name": "PV-1000",
+        "folder": "pv1000",
+        "platform_image": "Casio PV-1000.png"
+    },
+    {
+        "platform_name": "ROMHACKS Game Boy",
+        "folder": "gb",
+        "platform_image": "Game_Boy_romhacks.png"
+    },
+    {
+        "platform_name": "ROMHACKS Game Boy Advance",
+        "folder": "gba",
+        "platform_image": "Game_Boy_Advance_romhacks.png"
+    },
+    {
+        "platform_name": "ROMHACKS Game Boy Color",
+        "folder": "gbc",
+        "platform_image": "Game_Boy_Color_romhacks.png"
+    },
+    {
+        "platform_name": "ROMHACKS Mega Drive",
+        "folder": "megadrive",
+        "platform_image": "Sega_Mega_Drive_romhacks.png"
+    },
+    {
+        "platform_name": "ROMHACKS Nintendo 64",
+        "folder": "n64",
+        "platform_image": "Nintendo_64_romhacks.png"
+    },
+    {
+        "platform_name": "ROMHACKS Nintendo Entertainment System",
+        "folder": "nes",
+        "platform_image": "Nintendo_Entertainment_System_romhacks.png"
+    },
+    {
+        "platform_name": "ROMHACKS Super Nintendo Entertainment System",
+        "folder": "snes",
+        "platform_image": "Super_Nintendo_Entertainment_System_romhacks.png"
+    },
+    {
+        "platform_name": "Satellaview",
+        "folder": "satellaview",
+        "platform_image": "Satellaview.png"
+    },
+    {
+        "platform_name": "Saturn",
+        "folder": "saturn",
+        "platform_image": "Sega Saturn.png"
+    },
+    {
+        "platform_name": "ScummVM",
+        "folder": "scummvm",
+        "platform_image": "scummvm.png"
+    },
+    {
+        "platform_name": "Sega 32X",
+        "folder": "sega32x",
+        "platform_image": "Sega 32X.png"
+    },
+    {
+        "platform_name": "Sega Chihiro",
+        "folder": "chihiro",
+        "platform_image": "Sega Chihiro.png"
+    },
+    {
+        "platform_name": "Sega Lindbergh",
+        "folder": "lindbergh",
+        "platform_image": "Sega_Lindbergh.png"
+    },
+    {
+        "platform_name": "Sega Pico",
+        "folder": "pico",
+        "platform_image": "Sega Pico.png"
+    },
+    {
+        "platform_name": "SG-1000",
+        "folder": "sg1000",
+        "platform_image": "Sega SG-1000.png"
+    },
+    {
+        "platform_name": "Sharp X1",
+        "folder": "x1",
+        "platform_image": "Sharp X1.png"
+    },
+    {
+        "platform_name": "SuFami Turbo",
+        "folder": "sufami",
+        "platform_image": "Nintendo Sufami Turbo.png"
+    },
+    {
+        "platform_name": "Super A'Can",
+        "folder": "supracan",
+        "platform_image": "Funtech Super Acan.png"
+    },
+    {
+        "platform_name": "Super Cassette Vision",
+        "folder": "scv",
+        "platform_image": "Epoch Super Cassette Vision.png"
+    },
+    {
+        "platform_name": "Super Nintendo Entertainment System",
+        "folder": "snes",
+        "platform_image": "Super Nintendo Entertainment System.png"
+    },
+    {
+        "platform_name": "Supervision",
+        "folder": "supervision",
+        "platform_image": "Watara Supervision.png"
+    },
+    {
+        "platform_name": "Switch (1Fichier)",
+        "folder": "switch",
+        "platform_image": "Switch.png"
+    },
+    {
+        "platform_name": "Teknoparrot",
+        "folder": "teknoparrot",
+        "platform_image": "Teknoparrot.png"
+    },
+    {
+        "platform_name": "V.Smile",
+        "folder": "vsmile",
+        "platform_image": "V.Smile.png"
+    },
+    {
+        "platform_name": "Vectrex",
+        "folder": "vectrex",
+        "platform_image": "GCE Vectrex.png"
+    },
+    {
+        "platform_name": "Virtual Boy",
+        "folder": "virtualboy",
+        "platform_image": "Virtualboy.png"
+    },
+    {
+        "platform_name": "Wii",
+        "folder": "wii",
+        "platform_image": "Nintendo Wii.png"
+    },
+    {
+        "platform_name": "Wii (Virtual Console)",
+        "folder": "wii",
+        "platform_image": "wiiware.png"
+    },
+    {
+        "platform_name": "Wii U (EU) (1Fichier)",
+        "folder": "wiiu",
+        "platform_image": "Wii_U.png"
+    },
+    {
+        "platform_name": "Wii U (USA)",
+        "folder": "wiiu",
+        "platform_image": "Wii_U_USA.png"
+    },
+    {
+        "platform_name": "Windows (1Fichier)",
+        "folder": "windows",
+        "platform_image": "Windows.png"
+    },
+    {
+        "platform_name": "WonderSwan",
+        "folder": "wswan",
+        "platform_image": "Bandai WonderSwan.png"
+    },
+    {
+        "platform_name": "WonderSwan Color",
+        "folder": "wswanc",
+        "platform_image": "Bandai Wonderswan Color.png"
+    },
+    {
+        "platform_name": "Xbox",
+        "folder": "xbox",
+        "platform_image": "Microsoft Xbox.png"
+    },
+    {
+        "platform_name": "Xbox 360",
+        "folder": "xbox360",
+        "platform_image": "Microsoft Xbox 360.png"
+    },
+    {
+        "platform_name": "ZX Spectrum",
+        "folder": "zxspectrum",
+        "platform_image": "Sinclair ZX Spectrum.png"
+    }
+]

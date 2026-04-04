@@ -1,0 +1,11 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.archive.org	TRUE	/	FALSE	1803060842	donation-identifier	fdf6eb49fdf8dccf552ca2253446c841
+.archive.org	TRUE	/	FALSE	1803060842	abtest-identifier	21282be07a0b9fa88df9806201144277
+.archive.org	TRUE	/	FALSE	1776823987	view-search	tiles
+.archive.org	TRUE	/	FALSE	1776823987	showdetails-search	
+.archive.org	TRUE	/	FALSE	1789798216	g_state	{"i_l":0,"i_ll":1774246216454,"i_e":{"enable_itp_optimization":0},"i_b":"lf+QMzJeO3XSSWbOSwo4SiHrssz7l/8V0ywgCRUKQYc"}
+.archive.org	TRUE	/	FALSE	1805782353	logged-in-sig	1805782351%201774246351%20NDzeYMs1Kt9WAmSvMzUrj2KUbE%2BuDfOAZtEVm8HhD2V10jhDeT8IWlXmsRAamMxvYEySAeM%2BFgPhpg%2Bzfc1GpqCgyT6HkpxPw05jLDAi2r%2Ba42tV5DPIg5i9RQYk8CkiNmwqIDNsmJrqWeu6V9wjusH3fDHJINi5UoY0FOYxXSl5QFg%2FCF2lcFEVqLx2C2XRtuAKiAx2tcGjsEJIfb1Gkqw26c3hinSMf6lbsRNew0O1iXAArrtbYbwv9yAy8rMIhsv1XxaVdHjqwRvAmwHcV3zNj%2BsEazEm8gXVpc3jZPT5PYH7nZARMK1MZDoxOVqNX%2Bf5odgbQVA7cesP5vXHsw%3D%3D
+.archive.org	TRUE	/	FALSE	1805782353	logged-in-user	Titaniumretro1%40outlook.com
