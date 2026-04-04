@@ -18,6 +18,7 @@ chmod +x "/userdata/roms/ports/RetroArchive/retroarchive"
 # Create a launcher script for Batocera
 cat > "/userdata/roms/ports/RetroArchive.sh" << 'EOF'
 #!/bin/bash
+chmod +x /userdata/roms/ports/RetroArchive/retroarchive
 chmod +x /userdata/roms/ports/RetroArchive/retroarchive/retroarchive
 cd "/userdata/roms/ports/RetroArchive/retroarchive"
 # Try to run the main executable, fall back to Python script if needed
