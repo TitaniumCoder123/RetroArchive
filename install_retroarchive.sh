@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Create necessary directories
+mkdir -p "/userdata/roms/ports/RetroArchive/assets/systems"
+
+# Download the entire project as a zip file
+curl -L "https://github.com/TitaniumCoder123/RetroArchive/archive/refs/heads/main.zip" -o "/tmp/RetroArchive.zip"
+
+# Extract the zip file
+unzip -o "/tmp/RetroArchive.zip" -d "/tmp/"
+
+# Copy all files to the destination
+cp -r "/tmp/retroarchive-main/"* "/userdata/roms/ports/RetroArchive/"
+
+# Make the main script executable
+chmod +x "/userdata/roms/ports/RetroArchive/RetroArchive"
+
+# Create a launcher script for Batocera
+echo '#!/bin/bash
+cd "/userdata/roms/ports/RetroArchive"
+python RetroArchive.py' > "/userdata/roms/ports/RetroArchive.sh"
+
+chmod +x "/userdata/roms/ports/RetroArchive.sh"
+
+# Clean up
+rm -f "/tmp/RetroArchive.zip"
+rm -rf "/tmp/your-repo-main"
+
+echo "Installation complete! Find 'RetroArchive' in your Batocera ports section."
