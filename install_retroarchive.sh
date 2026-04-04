@@ -18,7 +18,7 @@ chmod +x "/userdata/roms/ports/RetroArchive/retroarchive"
 # Create a launcher script for Batocera
 echo '#!/bin/bash
 chmod +x /userdata/roms/ports/workingapp/workingapps
-cd /userdata/roms/ports/RetroArchive/retroarchive/ && export DISPLAY=:0.0; ./retroarchive
+cd /userdata/roms/ports/RetroArchive/retroarchive/ && export DISPLAY=:0.0; ./retroarchive'
 
 chmod +x "/userdata/roms/ports/RetroArchive.sh"
 
