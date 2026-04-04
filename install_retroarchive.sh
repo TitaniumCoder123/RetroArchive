@@ -16,10 +16,20 @@ cp -r "/tmp/RetroArchive-main/"* "/userdata/roms/ports/RetroArchive/"
 chmod +x "/userdata/roms/ports/RetroArchive/retroarchive"
 
 # Create a launcher script for Batocera
-echo '#!/bin/bash
-chmod +x /userdata/roms/ports/workingapp/workingapps
-cd /userdata/roms/ports/RetroArchive/retroarchive/ && export DISPLAY=:0.0; ./retroarchive'
-
+cat > "/userdata/roms/ports/RetroArchive.sh" << 'EOF'
+#!/bin/bash
+chmod +x /userdata/roms/ports/RetroArchive/retroarchive/retroarchive
+cd "/userdata/roms/ports/RetroArchive/retroarchive"
+# Try to run the main executable, fall back to Python script if needed
+if [ -f "retroarchive" ]; then
+    ./retroarchive
+elif [ -f "workingapps.sh" ]; then
+    ./workingapps.sh
+else
+    echo "Error: No executable found in RetroArchive directory"
+    sleep 5
+fi
+EOF
 chmod +x "/userdata/roms/ports/RetroArchive.sh"
 
 # Clean up
