@@ -43,20 +43,20 @@ if [ -f "$DEST_DIR/retroarchive" ]; then
     chmod +x "$DEST_DIR/retroarchive"
 fi
 
-if [ -f "$DEST_DIR/retroarchive" ]; then
-    chmod +x "$DEST_DIR/retroarchive"
+if [ -f "$DEST_DIR/workingapps.sh" ]; then
+    chmod +x "$DEST_DIR/workingapps.sh"
 fi
 
 # Update the launcher script for Batocera
 echo "Updating launcher script..."
-cat > "/userdata/roms/ports/RetroArchive" << 'EOF'
+cat > "/userdata/roms/ports/RetroArchive.sh" << 'EOF'
 #!/bin/bash
 cd "/userdata/roms/ports/RetroArchive"
 # Try to run the main executable, fall back to Python script if needed
 if [ -f "retroarchive" ]; then
     ./retroarchive
-elif [ -f "retroarchive" ]; then
-    ./retroarchive
+elif [ -f "workingapps.sh" ]; then
+    ./workingapps.sh
 else
     echo "Error: No executable found in RetroArchive directory"
     sleep 5
@@ -76,6 +76,6 @@ sleep 2
 cd "$DEST_DIR"
 if [ -f "retroarchive" ]; then
     ./retroarchive &
-elif [ -f "retroarchive" ]; then
-    ./retroarchive &
+elif [ -f "workingapps.sh" ]; then
+    ./workingapps.sh &
 fi
