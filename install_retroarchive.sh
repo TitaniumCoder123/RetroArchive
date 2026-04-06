@@ -3,33 +3,27 @@
 # Create necessary directories
 mkdir -p "/userdata/roms/ports/RetroArchive/assets/systems"
 
-# Stop any running instances before updating
-pkill -f "retroarchive" || true
-pkill -f "workingapps.sh" || true
-sleep 2
-
 # Download the entire project as a zip file
 curl -L "https://github.com/TitaniumCoder123/RetroArchive/archive/refs/heads/main.zip" -o "/tmp/RetroArchive.zip"
 
 # Extract the zip file
 unzip -o "/tmp/RetroArchive.zip" -d "/tmp/"
 
-# Force copy all files to the destination (overwrite existing files)
-cp -rf "/tmp/RetroArchive-main/"* "/userdata/roms/ports/RetroArchive/"
+# Copy all files to the destination
+cp -r "/tmp/RetroArchive-main/"* "/userdata/roms/ports/RetroArchive/"
 
-# Make the main scripts executable
-chmod +x "/userdata/roms/ports/RetroArchive/retroarchive/retroarchive"
-chmod +x "/userdata/roms/ports/RetroArchive/retroarchive/workingapps.sh"
+# Make the main script executable
+chmod +x "/userdata/roms/ports/RetroArchive/retroarchive"
 
-# Create/update the launcher script for Batocera
+# Create a launcher script for Batocera
 cat > "/userdata/roms/ports/RetroArchive.sh" << 'EOF'
 #!/bin/bash
-cd "/userdata/roms/ports/RetroArchive/retroarchive"
-export DISPLAY=:0.0
-./workingapps.sh
-EOF
+chmod +x /userdata/roms/ports/RetroArchive/retroarchive/retroarchive
+cd /userdata/roms/ports/RetroArchive/retroarchive && export DISPLAY=:0.0; ./workingapps.sh
+# Try to run the main executable, fall back to Python script if needed
 
-# Make the launcher script executable
+fi
+EOF
 chmod +x "/userdata/roms/ports/RetroArchive.sh"
 
 # Clean up
