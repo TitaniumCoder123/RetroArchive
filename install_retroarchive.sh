@@ -3,36 +3,63 @@
 # Create necessary directories
 mkdir -p "/userdata/roms/ports/RetroArchive/assets/systems"
 
+# Stop any running instances before updating
+echo "Stopping running RetroArchive instances..."
+pkill -f "retroarchive" || true
+pkill -f "workingapps.sh" || true
+
+# Wait longer for processes to fully terminate
+sleep 5
+
+# Force kill any remaining processes
+pkill -9 -f "retroarchive" || true
+pkill -9 -f "workingapps.sh" || true
+sleep 2
+
 # Download the entire project as a zip file
+echo "Downloading latest version..."
 curl -L "https://github.com/TitaniumCoder123/RetroArchive/archive/refs/heads/main.zip" -o "/tmp/RetroArchive.zip"
 
 # Extract the zip file
+echo "Extracting files..."
 unzip -o "/tmp/RetroArchive.zip" -d "/tmp/"
 
-# Copy all files to the destination
-cp -r "/tmp/RetroArchive-main/"* "/userdata/roms/ports/RetroArchive/"
+# Remove old files except for critical directories
+echo "Removing old files..."
+find "/userdata/roms/ports/RetroArchive" -mindepth 1 -maxdepth 1 \
+    ! -name "downloads" \
+    ! -name "torrent_library" \
+    ! -name "settings.json" \
+    -exec rm -rf {} +
 
-# Make the main script executable
-chmod +x "/userdata/roms/ports/RetroArchive/retroarchive"
+# Force copy all files to the destination (overwrite existing files)
+echo "Copying new files..."
+cp -rf "/tmp/RetroArchive-main/"* "/userdata/roms/ports/RetroArchive/"
 
-# Create a launcher script for Batocera
+# Make the main scripts executable
+echo "Setting executable permissions..."
+chmod +x "/userdata/roms/ports/RetroArchive/retroarchive/retroarchive"
+chmod +x "/userdata/roms/ports/RetroArchive/retroarchive/workingapps.sh"
+
+# Create/update the launcher script for Batocera
+echo "Creating launcher script..."
 cat > "/userdata/roms/ports/RetroArchive.sh" << 'EOF'
 #!/bin/bash
-chmod +x /userdata/roms/ports/RetroArchive/retroarchive/retroarchive
 cd "/userdata/roms/ports/RetroArchive/retroarchive"
-# Try to run the main executable, fall back to Python script if needed
-if [ -f "retroarchive" ]; then
-    ./retroarchive
-elif [ -f "workingapps.sh" ]; then
-    ./workingapps.sh
-else
-    echo "Error: No executable found in RetroArchive directory"
-    sleep 5
-fi
+export DISPLAY=:0.0
+./workingapps.sh
 EOF
+
+# Make the launcher script executable
 chmod +x "/userdata/roms/ports/RetroArchive.sh"
 
+# Update version file
+if [ -f "/tmp/RetroArchive-main/retroarchive/version.txt" ]; then
+    cp "/tmp/RetroArchive-main/retroarchive/version.txt" "/userdata/roms/ports/RetroArchive/retroarchive/version.txt"
+fi
+
 # Clean up
+echo "Cleaning up..."
 rm -f "/tmp/RetroArchive.zip"
 rm -rf "/tmp/RetroArchive-main"
 
