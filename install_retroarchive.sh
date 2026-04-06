@@ -1,57 +1,33 @@
 #!/bin/bash
 
+# Safe update script for RetroArchive
+echo "Starting RetroArchive update process..."
+
 # Create necessary directories
 mkdir -p "/userdata/roms/ports/RetroArchive/assets/systems"
 
-# Stop any running instances before updating
-echo "Stopping running RetroArchive instances..."
-pkill -f "retroarchive" || true
-pkill -f "workingapps.sh" || true
-
-# Wait longer for processes to fully terminate
-sleep 5
-
-# Force kill any remaining processes
-pkill -9 -f "retroarchive" || true
-pkill -9 -f "workingapps.sh" || true
-sleep 2
-
 # Download the entire project as a zip file
 echo "Downloading latest version..."
-curl -L "https://github.com/TitaniumCoder123/RetroArchive/archive/refs/heads/main.zip" -o "/tmp/RetroArchive.zip"
+if ! curl -L "https://github.com/TitaniumCoder123/RetroArchive/archive/refs/heads/main.zip" -o "/tmp/RetroArchive.zip"; then
+    echo "Failed to download update"
+    exit 1
+fi
 
 # Extract the zip file
 echo "Extracting files..."
-unzip -o "/tmp/RetroArchive.zip" -d "/tmp/"
+if ! unzip -o "/tmp/RetroArchive.zip" -d "/tmp/"; then
+    echo "Failed to extract update"
+    exit 1
+fi
 
-# Remove old files except for critical directories
-echo "Removing old files..."
-find "/userdata/roms/ports/RetroArchive" -mindepth 1 -maxdepth 1 \
-    ! -name "downloads" \
-    ! -name "torrent_library" \
-    ! -name "settings.json" \
-    -exec rm -rf {} +
-
-# Force copy all files to the destination (overwrite existing files)
+# Copy files without removing anything first (safer approach)
 echo "Copying new files..."
-cp -rf "/tmp/RetroArchive-main/"* "/userdata/roms/ports/RetroArchive/"
+cp -rf "/tmp/RetroArchive-main/retroarchive/"* "/userdata/roms/ports/RetroArchive/retroarchive/"
 
 # Make the main scripts executable
 echo "Setting executable permissions..."
 chmod +x "/userdata/roms/ports/RetroArchive/retroarchive/retroarchive"
 chmod +x "/userdata/roms/ports/RetroArchive/retroarchive/workingapps.sh"
-
-# Create/update the launcher script for Batocera
-echo "Creating launcher script..."
-cat > "/userdata/roms/ports/RetroArchive.sh" << 'EOF'
-#!/bin/bash
-cd "/userdata/roms/ports/RetroArchive/retroarchive"
-export DISPLAY=:0.0
-./workingapps.sh
-EOF
-
-# Make the launcher script executable
-chmod +x "/userdata/roms/ports/RetroArchive.sh"
 
 # Update version file
 if [ -f "/tmp/RetroArchive-main/retroarchive/version.txt" ]; then
@@ -63,4 +39,4 @@ echo "Cleaning up..."
 rm -f "/tmp/RetroArchive.zip"
 rm -rf "/tmp/RetroArchive-main"
 
-echo "Installation complete! Find 'RetroArchive' in your Batocera ports section."
+echo "Update complete! Restart RetroArchive to use the new version."
