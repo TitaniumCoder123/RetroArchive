@@ -51,7 +51,7 @@ cat > "/userdata/roms/ports/RetroArchive.sh" << 'EOF'
 #!/bin/bash
 cd "/userdata/roms/ports/RetroArchive/retroarchive"
 export DISPLAY=:0.0
-./workingapps.sh
+./retroarchive
 EOF
 
 # Make the launcher script executable
