@@ -28,12 +28,13 @@ wget --user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36" \
 echo "Extracting files..."
 unzip -o "/tmp/RetroArchive.zip" -d "/tmp/"
 
-# Remove old files except for critical directories
+# Remove old files except for critical directories and the installer script
 echo "Removing old files..."
 find "/userdata/roms/ports/RetroArchive" -mindepth 1 -maxdepth 1 \
     ! -name "downloads" \
     ! -name "torrent_library" \
     ! -name "settings.json" \
+    ! -name "install.sh" \
     -exec rm -rf {} +
 
 # Force copy all files to the destination (overwrite existing files)
@@ -69,6 +70,6 @@ rm -rf "/tmp/RetroArchive-main"
 
 # Self-delete this installer script to prevent it from showing up in the menu
 echo "Removing installer script..."
-rm -f "$0"
+rm -f "$0" || echo "Could not remove installer script"
 
 echo "Installation complete! Find 'RetroArchive' in your Batocera ports section."
