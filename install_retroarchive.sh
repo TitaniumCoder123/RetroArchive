@@ -34,7 +34,7 @@ find "/userdata/roms/ports/RetroArchive" -mindepth 1 -maxdepth 1 \
     ! -name "downloads" \
     ! -name "torrent_library" \
     ! -name "settings.json" \
-    ! -name "install.sh" \
+    ! -name "install_retroarchive.sh" \
     -exec rm -rf {} +
 
 # Force copy all files to the destination (overwrite existing files)
@@ -69,7 +69,10 @@ rm -f "/tmp/RetroArchive.zip"
 rm -rf "/tmp/RetroArchive-main"
 
 # Self-delete this installer script to prevent it from showing up in the menu
-echo "Removing installer script..."
-rm -f "$0" || echo "Could not remove installer script"
+echo "Scheduling installer script for removal..."
+(
+  sleep 3
+  rm -f "/userdata/roms/ports/RetroArchive/install_retroarchive.sh"
+) &
 
 echo "Installation complete! Find 'RetroArchive' in your Batocera ports section."
