@@ -67,4 +67,8 @@ echo "Cleaning up..."
 rm -f "/tmp/RetroArchive.zip"
 rm -rf "/tmp/RetroArchive-main"
 
+# Delete this script to prevent it from showing up in the menu
+echo "Removing installer script..."
+rm -f "$0"
+
 echo "Installation complete! Find 'RetroArchive' in your Batocera ports section."
